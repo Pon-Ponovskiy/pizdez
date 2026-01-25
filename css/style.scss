@@ -6,45 +6,45 @@
 @import "header.scss";
 @import "main.scss";
 
-.grid{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+// .grid{
+//     display: flex;
+//     justify-content: space-around;
+//     flex-wrap: wrap;
 
 
-    &__item{
-        /* width: 200px; */
+//     &__item{
+//         /* width: 200px; */
 
-        margin-bottom: 25px;
+//         margin-bottom: 25px;
 
-        &:not(:nth-child(4n)){
-            margin-right: 18px;
-        }
+//         &:not(:nth-child(4n)){
+//             margin-right: 18px;
+//         }
 
-    }
-}
+//     }
+// }
 
-.card{
-    height: 100%;
-    padding: 20px;
-    border: 1px solid gray;
-    border-radius: 6px;
-    overflow: hidden;
-    background-color: #eedfc0;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
+// .card{
+//     height: 100%;
+//     padding: 20px;
+//     border: 1px solid gray;
+//     border-radius: 6px;
+//     overflow: hidden;
+//     background-color: #eedfc0;
+//     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+// }
 
-&__image{
-    display: block;
-    width: 100%;
-    height: 300px;
-    margin-bottom: 20px;
+// &__image{
+//     display: block;
+//     width: 100%;
+//     height: 300px;
+//     margin-bottom: 20px;
 
-    img{
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
+//     img{
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//     }
 
     
-}
+// }
