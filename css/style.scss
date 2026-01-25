@@ -1,10 +1,11 @@
-@import "normalize.scss";
-@import "adaptive_font_scale.scss";
 
+@use "adaptive_font_scale" as *;
+@use "header" as *;
+@use "main" as *;
+
+@use "normalize.scss" as *;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import "header.scss";
-@import "main.scss";
 
 // .grid{
 //     display: flex;

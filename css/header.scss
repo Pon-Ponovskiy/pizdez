@@ -72,7 +72,13 @@
         display: flex;
         align-items: center;
       }
-
+      &:hover{
+        .header__select-body{
+          opacity: 1;
+          visibility: visible;
+          height: max-content;
+        }
+      } 
       &-body{
         width: max-content;
         opacity: 0;
