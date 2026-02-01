@@ -8,9 +8,8 @@ mixin custom-select(name)
         .header__select-header
             span.header__select-current=name
             .header__select-icon
-                img.header__select-icon-img(src=require("media/svg/Select-icon.svg" alt=""))
+                img.header__select-icon-img(src=require("../media/svg/strelka.png") alt="")
         .header__select-body
-            +select-item('Post Header')
             +select-item('Post Layout')
             +select-item('Share Button')
             +select-item('Gallery Post')
@@ -19,7 +18,7 @@ mixin custom-select(name)
 header.header
     .header__mobile
         .header__mobile-top
-            img.header__logo(src=require("media/svg/Logotype.svg" alt=""))
+            img.header__logo(src=require("../media/svg/logo_amazon.png") alt="")
             .header__close-btn
                 span.header__mobile-cross
         .header__mobile-bottom
@@ -33,7 +32,7 @@ header.header
     .header__top
         .header__burger
             span.header__burger-menu
-        img.header__logo(src=require("media/svg/Logotype.svg" alt=""))
+        img.header__logo(src=require("../media/svg/logo_amazon.png") alt="")
         .header__top_right
             input.header__text-field(type="text" placeholder="Поиск")
             button.header__search
