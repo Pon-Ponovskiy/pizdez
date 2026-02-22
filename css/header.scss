@@ -22,7 +22,7 @@
         width: 10rem;
       }
     }
-
+    
     &__search{
       background-image: url("../media/svg/lupa.png");
       box-sizing: border-box;
@@ -167,6 +167,7 @@
 
 .header__logo.active{
   opacity: 0;
+  
 }
 
 body.active{

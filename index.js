@@ -27,12 +27,40 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     }
 
+    let headerBurger = document.querySelector('.header__burger')
+    let headerLogo = document.querySelector('.header__logo')
+    let headerMobile = document.querySelector('.header__mobile')
+    let headerCross = document.querySelector('.header__mobile-cross')
 
 
+    function openBurgerMenu(){
+        headerBurger.addEventListener('click', ()=>{
+            headerLogo.classList.add('active')
+            headerMobile.classList.toggle('active')
+            headerCross.classList.toggle('active')
+        })
+    }
+    openBurgerMenu()
 
+    function closeBurgerMenu(){
+        headerLogo.classList.remove('active')
+        headerMobile.classList.remove('active')
+        headerCross.classList.remove('active')
+    }
+    
+    outBurgerMenu = document.addEventListener('click', (e)=>{
+        const withinBoundaries = e.composedPath().includes(headerBurger);
 
+        if ( ! withinBoundaries ) {
+            return closeBurgerMenu()
+	    }
+    })
 
+    // if(headerCross.addEventListener('click'),()=>{
 
+    // }){
+
+    // }
 
 
 
