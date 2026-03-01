@@ -28,50 +28,29 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     let headerBurger = document.querySelector('.header__burger')
-    let headerLogo = document.querySelector('.header__logo')
+    let headerLogo = document.querySelector('.header__top').querySelector('.header__logo')
     let headerMobile = document.querySelector('.header__mobile')
     let headerCross = document.querySelector('.header__mobile-cross')
 
 
     function openBurgerMenu(){
-        headerBurger.addEventListener('click', ()=>{
-            headerLogo.classList.add('active')
-            headerMobile.classList.toggle('active')
-            headerCross.classList.toggle('active')
+        headerLogo.classList.add('active')
+        headerMobile.classList.toggle('active')
+        headerCross.classList.toggle('active')
+        document.addEventListener('click', (e)=>{
+            const withinBoundaries = e.composedPath().includes(headerMobile);
+            const withinButton = e.composedPath().includes(headerBurger);
+            if ( ! withinBoundaries && ! withinButton){
+                closeBurgerMenu()
+	    }
         })
     }
-    openBurgerMenu()
 
     function closeBurgerMenu(){
         headerLogo.classList.remove('active')
         headerMobile.classList.remove('active')
         headerCross.classList.remove('active')
     }
-    
-    outBurgerMenu = document.addEventListener('click', (e)=>{
-        const withinBoundaries = e.composedPath().includes(headerBurger);
-
-        if ( ! withinBoundaries ) {
-            return closeBurgerMenu()
-	    }
-    })
-
-    // if(headerCross.addEventListener('click'),()=>{
-
-    // }){
-
-    // }
-
-
-
-
-
-
-
-
-
-
-
-
-
+    headerBurger.addEventListener('click', openBurgerMenu)
+    headerCross.addEventListener('click', closeBurgerMenu)
 })  
